@@ -1,48 +1,57 @@
-# sistemaConfirmacion
+# ⛪ Sistema de Gestión de Asistencias - Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+Este repositorio contiene la capa de presentación (Frontend) del **Sistema Institucional de Gestión de Asistencias y Control Documental**, desarrollado como parte del proyecto de prácticas preprofesionales en **T3M E.I.R.L.** La aplicación ha sido construida como una **SPA (Single Page Application)** utilizando tecnologías reactivas modernas para garantizar una experiencia de usuario fluida y eficiente.
 
-## Recommended IDE Setup
+## 🚀 Tecnologías Utilizadas
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+*   **Framework:** [Vue.js 3](https://vuejs.org/) (Composition API).
+*   **Bundler:** [Vite](https://vitejs.dev/) (Para un entorno de desarrollo ultrarrápido).
+*   **Estilos:** [Tailwind CSS](https://tailwindcss.com/) (Diseño responsivo y utilitario).
+*   **Cliente HTTP:** [Axios](https://axios-http.com/) (Consumo de servicios API REST).
+*   **Iconografía:** [Lucide Vue](https://lucide.dev/) / Heroicons.
 
-## Recommended Browser Setup
+## 📦 Requisitos Previos
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Antes de iniciar la instalación, asegúrate de tener instalado:
+*   [Node.js](https://nodejs.org/) (Versión 18.x o superior recomendada).
+*   [NPM](https://www.npmjs.com/) o [Yarn].
+*   El backend (`sistemaConfirmacionApi`) debe estar configurado y corriendo para el consumo de datos.
 
-## Type Support for `.vue` Imports in TS
+## 🛠️ Instalación y Configuración
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Siga estos pasos para levantar el entorno de desarrollo local:
 
-## Customize configuration
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/cris270504/sistemaConfirmacion.git](https://github.com/cris270504/sistemaConfirmacion.git)
+    cd sistemaConfirmacion
+    ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
 
-## Project Setup
+3.  **Configurar variables de entorno:**
+    Crea un archivo `.env` en la raíz del proyecto y define la URL de acceso a la API:
+    ```env
+    VITE_API_BASE_URL=http://localhost:8000/api
+    ```
 
-```sh
-npm install
-```
+4.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+    La aplicación estará disponible por defecto en `http://localhost:5173`.
 
-### Compile and Hot-Reload for Development
+## 📂 Estructura del Proyecto
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+```text
+src/
+├── assets/         # Recursos estáticos (Imágenes, estilos globales)
+├── components/     # Componentes de UI reutilizables (Botones, Modales, Tablas)
+├── layouts/        # Estructuras de página (Navegación, Sidebar)
+├── services/       # Clientes de Axios y lógica de comunicación con la API
+├── views/          # Páginas principales (Login, Dashboard, Asistencias)
+├── App.vue         # Componente raíz
+└── main.js         # Configuración e inicialización de la instancia de Vue
