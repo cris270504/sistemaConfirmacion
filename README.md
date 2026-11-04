@@ -1,3 +1,5 @@
+> ⚠️ **Versión anterior, ya no se mantiene.** La versión actual está en [Sistema-de-gesti-n-de-Programa-de-Confirmaci-n-Fronted-](https://github.com/cris270504/Sistema-de-gesti-n-de-Programa-de-Confirmaci-n-Fronted-).
+
 # ⛪ Sistema de Gestión de Asistencias - Frontend
 
 Este repositorio contiene la capa de presentación (Frontend) del **Sistema Institucional de Gestión de Asistencias y Control Documental**, desarrollado como parte del proyecto de prácticas preprofesionales en **T3M E.I.R.L.** La aplicación ha sido construida como una **SPA (Single Page Application)** utilizando tecnologías reactivas modernas para garantizar una experiencia de usuario fluida y eficiente.
